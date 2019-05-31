@@ -1,6 +1,13 @@
 .jumbotron {
-    background-image: url("hot.png");
-    background-size: 50%;
+    background-image: url("smoke.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: whitesmoke;
     
+}
+body {
+    background-image: url("smoke.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
