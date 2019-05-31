@@ -1,3 +1,6 @@
-#jumbotron {
-    background-image: url("hot.png")
+.jumbotron {
+    background-image: url("hot.png");
+    background-size: 50%;
+    color: whitesmoke;
+    
 }
