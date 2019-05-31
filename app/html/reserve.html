@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Up In Smoke</title>
-  <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -68,17 +67,17 @@
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
 
-      var newCharacter = {
-        name: $("#name").val().trim(),
-        role: $("#role").val().trim(),
-        age: $("#age").val().trim(),
-        forcePoints: $("#force-points").val().trim()
+      var newtable = {
+        customerName: $("#name").val().trim(),
+        customerEmail: $("#email").val().trim(),
+        phoneNumber: $("#phone").val().trim(),
+        customerID: $("#Id-number").val().trim()
       };
 
-      $.post("/api/characters", newCharacter)
+      $.post("/api/tables", newtable)
         .then(function(data) {
           console.log(data);
-          alert("Adding character...");
+          alert("Adding reservation...");
         });
 
     });
